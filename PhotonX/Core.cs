@@ -43,7 +43,7 @@ namespace PhotonX
                         while (true)
                         {
                             socket.SendTo(buff, target);
-                            log.logF<string>($"sent: {data} to: {target}", true);
+                            log.logF<string>($"Sent: [[ {data} ]] to: {target}", false);
                             Thread.Sleep(50);
                         }
                     }
